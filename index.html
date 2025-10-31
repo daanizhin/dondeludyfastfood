@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donde Ludy Fast Food - Pedidos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo Donde Ludy">
+      </div>
+      <div>
+        <div class="brand">Donde Ludy Fast Food</div>
+        <div class="sub">Sabores caseros • Sáb y Dom 6pm - 11pm</div>
+      </div>
+      <nav class="nav">
+        <a class="link-ghost" href="sobre.html">Sobre nosotros</a>
+        <a class="link-ghost" href="ubicacion.html">Ubicación</a>
+        <a class="btn" href="https://www.instagram.com/dondeludy_fastfood/?igsh=MW53bGI0M2dobW8yOQ%3D%3D#" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <h2 style="margin:0">Menú</h2>
+            <div class="small">Selecciona cantidades</div>
+          </div>
+          <div id="menuGrid" class="menu-grid" style="margin-top:12px"></div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3 style="margin:0">Información adicional</h3>
+          <p class="small" style="margin-top:8px">Dirección: Calle 24 #12-43 Barrio Alfonso Lopez</p>
+          <p class="small">Horario: Sabados y domingos de 6 pm a 11pm</p>
+          <p class="small">WhatsApp para dudas: <a href="https://wa.me/573125339955" target="_blank" rel="noopener">+57 312 533 9955</a></p>
+        </div>
+      </section>
+
+      <aside class="rightcol">
+        <div class="card">
+          <h3 style="margin:0">Tu pedido</h3>
+          <div id="cartList" class="small" style="margin-top:8px">No hay productos añadidos.</div>
+          <div style="margin-top:12px" class="summary-row">
+            <div class="small">Total</div>
+            <div style="font-weight:700">$<span id="total">0</span></div>
+          </div>
+
+          <div style="margin-top:12px">
+            <label class="small">Nombre del cliente</label>
+            <input id="cliente" class="form-control" placeholder="Ej: María">
+          </div>
+          <div style="margin-top:8px">
+            <label class="small">Dirección / Observaciones</label>
+            <input id="direccion" class="form-control" placeholder="Calle, barrio, referencia">
+          </div>
+
+          <div style="display:flex;gap:8px;margin-top:12px">
+            <button id="whatsappBtn" class="btn" style="flex:1">Hacer pedido (WhatsApp)</button>
+            <button id="clearBtn" class="link-ghost" style="width:110px">Limpiar</button>
+          </div>
+
+          <div style="margin-top:12px" class="small">
+            <div><strong>Contacto</strong></div>
+            <div>WhatsApp: <a href="https://wa.me/573125339955" target="_blank">+57 312 533 9955</a></div>
+            <div style="margin-top:6px"><a href="https://www.instagram.com/dondeludy_fastfood/?igsh=MW53bGI0M2dobW8yOQ%3D%3D#" target="_blank">Instagram</a></div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div>Donde Ludy Fast Food — Donde el sabor se siente en casa.</div>
+      <div style="margin-top:8px">Archivo generado para presentación. Puedes editar el menú en app.js</div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
